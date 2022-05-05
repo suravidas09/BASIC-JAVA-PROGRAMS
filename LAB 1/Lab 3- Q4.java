@@ -1,44 +1,21 @@
 /* NAME : SURAVI DAS */
 import java.util.*;
 
-public class lab3_3 {
-
+public class lab3_4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a day- ");
+        System.out.print("Enter a number- ");
         int n = sc.nextInt();
-        sc.close();
-        switch (n) {
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-
-            case 3:
-                System.out.println("Wednesday");
-                break;
-
-            case 4:
-                System.out.println("Thursday");
-                break;
-
-            case 5:
-                System.out.println("Friday");
-                break;
-
-            case 6:
-                System.out.println("Saturday");
-                break;
-
-            case 7:
-                System.out.println("Sunday");
-                break;
-
-            default:
-             System.out.println("Invalid");
-
+        int rem, s = 0, temp;
+        temp = n;
+        while (n > 0) {
+            rem = n % 10;
+            s = (s * 10) + rem;
+            n = n / 10;
         }
+        if (temp == s)
+            System.out.println("It is a palindrome number ");
+        else
+            System.out.println("It is not a palindrome");
     }
 }
