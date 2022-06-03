@@ -1,25 +1,17 @@
 import java.awt.*;
-import java.applet.Applet;
-public class lab9_6 extends Applet 
+import java.applet.*;
+public class lab9_1 extends Applet
 {
-
- public void paint(Graphics g) 
- {
-  
-    g.setColor(Color.yellow);
-    g.fillOval(20,20,150,150);   // For face
-    g.setColor(Color.black);
-    g.fillOval(50,60,15,25);     // Left Eye 
-    g.fillOval(120,60,15,25);    // Right Eye
-    int x[] = {95,85,106,95};
-    int y[] = {85,104,104,85};
-    g.drawPolygon(x, y, 4);      // Nose
-    g.drawArc(55,95,78,50,0,-180);  // Smile
-    g.drawLine(50,126,60,116);   // Smile arc1
-    g.drawLine(128,115,139,126);  // Smile arc2
- }
+    public void paint(Graphics g)
+    {
+        g.drawString("Roll: 20051297", 20, 20);
+        g.drawString("Name: Aarya Jain", 40, 40);
+        g.drawString("Branch: CSE", 60, 60);
+        g.drawString("Section: CSE-18", 80, 80);
+        g.drawString("Subject: Web Technology Lab", 100, 100);
+    }
 }
-
-/* <applet code="lab9_6.class" width="200" height="200">
-   </applet>
+/*
+<applet code="lab9_1.class" height=300 width=200>
+</applet>
 */
